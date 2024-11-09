@@ -1,0 +1,88 @@
+ #Parte-2, #Parte-3 {
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 100px 20px 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#ppr{
+    display: flex;
+    margin: 0px 100px 0px 150px;
+    padding: 20px;
+    gap: 40px;
+    width: 1000px;
+}
+
+#ppr p {
+    width: 500px;
+}
+
+.titles {
+    padding-top: 50px;
+    font-size: 40px;
+    color: #1953dc;
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+#Parte-1 {
+   
+    margin: 0 100px 20px 100px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 40px;
+    color: #1953dc;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+#au{ 
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.Texto {
+    width: auto;
+    font-family: "Poppins";
+    text-align: justify;
+    font-size: 22px;
+    
+}
+
+#Parte-3 {
+    align-items: center;
+    gap: 100px;
+}
+
+img {
+    border-radius: 15px;
+}
+
+#Parte-3 img {
+    width: 250px;
+}
+
+
+.voltar img {
+    width: 40px;
+    height: 50px;
+}
+
+.voltar {
+    position: fixed;
+    right: 50px;
+    bottom: 25px; 
+    scroll-behavior: smooth;
+}
+

@@ -1,0 +1,244 @@
+/* Reset de alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos gerais */
+body {
+    
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilos para a seção de risco */
+#risks {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+   
+  
+  
+
+#risks h2 {
+    margin-top: 100PX;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #1953dc;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+/* Container de flashcards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Estilos para cada card */
+.card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #3498db;
+}
+
+.card-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Efeito de revelação do conteúdo */
+.card-hover {
+    display: none;
+    background-color: #ecf0f1;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #34495e;
+    font-size: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card:hover .card-hover {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-hover p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+}
+@media (max-width: 1095px) {
+    header {
+      padding: 10px 4%;
+    }
+    #nav_list {
+      gap: 0px;
+      width: 100%;
+    }
+    .nav-logo {
+      width: 100px;
+      height: auto;
+    }
+    .fundador img {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 880px) {
+    header {
+      flex-direction: column;
+    }
+    #navbar {
+      justify-content: center;
+    }
+    #nav_list {
+      gap: 15px;
+    }
+    .nav-logo {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      font-size: 30px;
+    }
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+        gap: 20px;
+    }
+}
+  @media (max-width: 850px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+  }
+  @media (max-width: 750px) {
+    #nav_list{
+        line-height: 0.3;
+        padding-bottom: 5%;
+    }
+    .nav-item a {
+      font-size: 11px;
+    }
+    #nav_list {
+      flex-direction: column;
+      text-align: center;
+    }
+      
+  }
+  
+  @media (max-width: 560px) {
+    .card{
+        width: 200px;
+    }
+
+    .card-content h3 {
+        font-size: 1.1rem;  
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+
+    .card-hover p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+  }
+ @media (max-width: 460px) {
+    #risks h2 {
+        font-size: 2.0rem;
+    }
+    
+    .card{
+        width: 150px;
+    }
+
+    .card-content h3 {
+        font-size: 0.9rem;  
+    }
+
+    .card-content p {
+        font-size: 0.7rem;
+    }
+
+    .card-hover p {
+        font-size: 0.7rem;
+        line-height: 1.5;
+    }
+    #erro{
+        font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 365px) {
+    #risks h2 {
+        font-size: 1.8rem;
+    }
+    .card{
+        width: 180px;
+    }
+
+  .card-container {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+  }

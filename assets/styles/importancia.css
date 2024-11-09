@@ -1,7 +1,10 @@
-
 #nav_list {
     height: 8px;
   }
+
+.nav-item a {
+    text-decoration: none;
+}
 #content {
     background-color: white;
 }
@@ -36,7 +39,6 @@
     font-size: 40px;
     color: #1953dc;
     font-weight: 600px;
-    
     font-family: "Poppins";
 }
 

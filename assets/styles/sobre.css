@@ -194,115 +194,90 @@ h2{
 .text a{
     color: black;
 }
-     @media (max-width: 1095px) {
-        header {
-          padding: 10px 4%;
-        }
-        #nav_list {
-          gap: 0px;
-          width: 100%;
-        }
-        .nav-logo {
-          width: 100px;
-          height: auto;
-        }
-        .fundador img {
-          width: 200px;
-        }
-      }
-      
-      @media (max-width: 880px) {
-        header {
-          flex-direction: column;
-        }
-        #navbar {
-          justify-content: center;
-        }
-        #nav_list {
-          flex-direction: c;
-          gap: 15px;
-        }
-        .nav-logo {
-          width: 80px;
-          height: auto;
-          margin-bottom: 10px;
-        }
-        .cont1 {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-        }
-        .img1 {
-          max-width: 100%;
-          height: auto;
-        }
-        .text1 {
-          padding: 10px;
-        }
-        h2 {
-          font-size: 30px;
-        }
-        .fundador{
-            flex-direction: column;
-        }
-        .box p,
-        .fundador p {
-            font-size: 22px;
-            text-align: center;
-        }
-        .pintooo {
-          flex-direction: column;
-          text-align: center;
-        }
-      }
-      @media (max-width: 750px) {
-        #nav_list{
-          line-height: 0.3;
-          padding-bottom: 5%;
-        }
-        h2 {
-          font-size: 24px;
-        }
-        .nav-item a {
-          font-size: 11px;
-        }
-        #nav_list {
-          flex-direction: column;
-          text-align: center;
-        }
-        .teams h2 {
-          font-size: 28px;
-        }
-        .fundador img {
-          width: 150px;
-        }
-        .fundador p,
-        .pintooo {
-            font-size: 18px;
-        }
-    
-        .pintooo {
-            margin-bottom: 70px;
-        }
-    
-        .teams .carousel .card {
-          padding: 15px 20px;
-        }
-      
-        .teams .carousel .card img {
-          width: 150px;
-          height: 150px;
-        }
-      }
-      
-      @media (max-width: 370px) {
-        .teams h2{
-          font-size: 20px;
-        }
-      }
-      @media (max-width: 375px) {
-        .fundador p,
-        .pintooo {
-            font-size: 14px;
-        }
-      }
+@media (max-width: 1095px) {
+  .nav-logo {
+    width: 100px;
+    height: auto;
+  }
+  .fundador img {
+    width: 200px;
+  }
+} 
+@media (max-width: 885px) {
+  #nav_list{
+    display: none;
+  }
+  .nav-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .cont1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+  .img1 {
+    max-width: 100%;
+    height: auto;
+  }
+  .text1 {
+    padding: 10px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .fundador{
+      flex-direction: column;
+  }
+  .box p,
+  .fundador p {
+      font-size: 22px;
+      text-align: center;
+  }
+  .pintooo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  h2 {
+    font-size: 24px;
+  }
+  .teams h2 {
+    font-size: 28px;
+  }
+  .fundador img {
+    width: 150px;
+  }
+  .fundador p,
+  .pintooo {
+      font-size: 18px;
+  }
+
+  .pintooo {
+      margin-bottom: 70px;
+  }
+
+  .teams .carousel .card {
+    padding: 15px 20px;
+  }
+
+  .teams .carousel .card img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 370px) {
+  .teams h2{
+    font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .fundador p,
+  .pintooo {
+      font-size: 14px;
+      text-align: justify;
+  }
+}

@@ -13,6 +13,9 @@
   padding: 30px;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 #inicio h1 {
@@ -26,29 +29,29 @@
 #inicio h2 {
   color: #60a5fa;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Poppins";
   
 }
 
-.cont1 {
+.cont1, .cont2 {
   display: flex;
   text-align: justify;
   align-items: center;
-  width: 1200px;
-  gap: 18px;
+  max-width: 100%;
+  margin-left: 80px;
+  gap: 25px;
 }
 .cont1 p{
   font-size: 22px;
   font-family: "Poppins";
   font-weight: 400;
-  margin: 0px 100px 0px 0px;
 }
 .cont2 p{
   font-size: 22px;
   font-family: "Poppins";
   font-weight: 400;
-  margin: 0px 0px 0px 100px;
+  width: 85%;
 }
 .text1 {
   display: flex;
@@ -57,14 +60,111 @@
 
 .img1 {
   width: 375px;
-  height: 310px;
+  height: 330px;
   border-radius: 6px;
-  margin: 100px 0px 0px 100px;
-
+  margin-top: 190px;
+  margin-right: 140px;
 }
 
-.cont2 {
-  width: 1120px;
-  text-align: justify;
-  
+@media (max-width: 1116px) {
+  #inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #inicio h1 {
+    font-size: 40px;
+  }
+
+  #inicio h2 {
+    font-size: 25px;
+  }
+
+  .cont1, .cont2 {
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .cont1 p {
+    font-size: 20px;
+    margin: 0px 20px 0px 0px;
+    width: 74%;
+  }
+
+  .cont2 p {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+    width: 88%;
+  }
+
+  .img1 {
+    width: 100%;
+    max-width: 355px;
+    margin-left: 70px;
+  }
+}
+@media (max-width: 995px) {
+  #inicio h1 {
+    font-size: 35px;
+  }
+  #inicio {
+    display: flex;
+    flex-direction: column;
+  }
+  .cont1, .cont2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+  }
+  .text1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .cont2 {
+    width: 614px;
+    margin: 0;
+    padding: 0;
+   }
+  .img1 {
+    margin: 0 0 15px 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 995px) {
+  #inicio h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  #inicio h1 {
+    font-size: 27px;
+  }
+
+  #inicio h2 {
+    font-size: 24px;
+  }
+
+  .cont1 p {
+    font-size: 18px;
+    margin: 0 10px 0 0;
+  }
+
+  .cont2 p {
+    font-size: 18px;
+    width: 260px;
+  }
+
+  .img1 {
+    width: 280px;
+    height: auto;
+    margin-bottom: 25px;
+  }
 }

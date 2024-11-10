@@ -141,7 +141,19 @@
   #inicio h1 {
     font-size: 30px;
   }
+  .nav-logo {
+    width: 100px;
+    height: auto;
+  }
 }
+@media (max-width: 885px) {
+.nav-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+}
+
 
 @media (max-width: 768px) {
   #inicio h1 {

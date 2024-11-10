@@ -6,18 +6,19 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    width: auto;
+    font-family: "Poppins";
+    text-align: justify;
+    font-size: 22px;
 }
 #ppr{
     display: flex;
-    margin: 0px 100px 0px 150px;
-    padding: 20px;
-    gap: 40px;
-    width: 1000px;
+    margin: 20px 100px;
+    gap: 20px;
+    align-items: center;
+    width: 93%;
 }
 
-#ppr p {
-    width: 500px;
-}
 
 .titles {
     padding-top: 50px;
@@ -25,18 +26,21 @@
     color: #1953dc;
     text-align: center;
     margin-top: 60px;
-
 }
 
 #Parte-1 {
-   
     margin: 0 100px 20px 100px;
     padding: 20px;
+    width: auto;
+    font-family: "Poppins";
+    text-align: justify;
+    font-size: 22px;
 }
 
 .title {
     font-size: 40px;
     color: #1953dc;
+    text-align: center;
 }
 
 ul {
@@ -52,13 +56,6 @@ ul {
     align-content: center;
 }
 
-.Texto {
-    width: auto;
-    font-family: "Poppins";
-    text-align: justify;
-    font-size: 22px;
-    
-}
 
 #Parte-3 {
     align-items: center;
@@ -73,3 +70,69 @@ img {
     width: 250px;
 }
 
+@media (max-width: 1116px) {
+    #Parte-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ppr {
+        flex-direction: column;
+    }
+  
+    .title {
+      font-size: 40px;
+      text-align: center;
+      text-wrap: nowrap;
+    }
+  }
+  @media (max-width: 995px) {
+    #inicio {
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-logo {
+        width: 100px;
+        height: auto;
+      }
+  }
+  @media (max-width: 885px) {
+    .nav-logo {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+}
+  @media (max-width: 768px) {
+    #Parte-1, #Parte-2, #Parte-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 28px;
+        text-align: center;
+        text-wrap: nowrap;
+      }
+  }
+  @media (max-width: 768px) {
+    #Parte-1 p, #Parte-2 p, #Parte-3 p, #Parte-2 li, #Parte-3 li{
+        font-size: 18px;
+        width: 340px;
+        font-weight: 500;
+  }
+  #Parte-1 img, #Parte-2 img, #Parte-3 img {
+        width: 290px;
+  }
+
+  .title, .titles {
+    font-size: 28px;
+    width: 400px;
+    text-wrap: wrap;
+    text-align: center;
+  }
+}
